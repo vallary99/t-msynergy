@@ -1,0 +1,117 @@
+{
+  "tm-synergy-logo.png": [
+    "img/T%26Micon/T%26Micon-1.png",
+    "T%26Micon/T%26Micon-1.jpg"
+  ],
+  "plant-automation.jpg": [
+    "img/services/service-23.jpg"
+  ],
+  "power-transmission-distribution.jpg": [
+    "img/electrical/electrical-5.JPG"
+  ],
+  "auxiliary-power-systems.jpg": [
+    "img/services/service-14.JPG"
+  ],
+  "system-integration-support.jpg": [
+    "img/services/service-11.JPG"
+  ],
+  "tm-synergy-services-1.jpg": [
+    "img/services/service-24.jpg"
+  ],
+  "tm-synergy-services-2.jpg": [
+    "img/services/service-25.jpg"
+  ],
+  "safety-signage.jpg": [
+    "img/safety/safety-2.JPG"
+  ],
+  "safety-equipment.jpg": [
+    "img/safety/safety-4.jpg"
+  ],
+  "electrical-instrumentation-mechanical-1.jpg": [
+    "img/equipment/equipment-1.JPG"
+  ],
+  "electrical-instrumentation-mechanical-2.jpg": [
+    "img/equipment/equipment-3.JPG"
+  ],
+  "electrical-instrumentation-mechanical-3.jpg": [
+    "img/electrical/electrical-2.JPG"
+  ],
+  "electrical-instrumentation-mechanical-4.jpg": [
+    "img/electrical/electrical-3.JPG"
+  ],
+  "electrical-instrumentation-mechanical-5.jpg": [
+    "img/electrical/electrical-1.JPG"
+  ],
+  "oil-gas-equipment-supplies-1.jpg": [
+    "img/equipment/equipment-10.JPG"
+  ],
+  "oil-gas-equipment-supplies-2.jpg": [
+    "img/services/service-17.JPG"
+  ],
+  "oil-gas-equipment-supplies-3.jpg": [
+    "img/equipment/equipment-8.JPG"
+  ],
+  "oil-gas-equipment-supplies-4.jpg": [
+    "img/equipment/equipment-9.JPG"
+  ],
+  "clients/client-1.png": [
+    "img/clients/client-1.PNG"
+  ],
+  "clients/client-2.jpg": [
+    "img/clients/client-2.JPG"
+  ],
+  "clients/client-3.jpg": [
+    "img/clients/client-3.JPG"
+  ],
+  "clients/client-4.png": [
+    "img/clients/client-4.PNG"
+  ],
+  "clients/client-5.png": [
+    "img/clients/client-5.PNG"
+  ],
+  "clients/client-6.jpg": [
+    "img/clients/client-6.JPG"
+  ],
+  "clients/client-7.png": [
+    "img/clients/client-7.PNG"
+  ],
+  "clients/client-8.jpg": [
+    "img/clients/client-8.JPG"
+  ],
+  "clients/client-9.png": [
+    "img/clients/client-9.PNG"
+  ],
+  "clients/client-10.png": [
+    "img/clients/client-10.PNG"
+  ],
+  "clients/client-11.jpg": [
+    "img/clients/client-11.JPG"
+  ],
+  "partners/partner-1.png": [
+    "img/partners/partner-1.PNG"
+  ],
+  "partners/partner-2.jpg": [
+    "img/partners/parner-2.JPG"
+  ],
+  "partners/partner-3.png": [
+    "img/partners/partner-3.PNG"
+  ],
+  "partners/partner-4.png": [
+    "img/partners/partner-4.PNG"
+  ],
+  "partners/partner-5.png": [
+    "img/partners/partner-5.PNG"
+  ],
+  "partners/partner-6.png": [
+    "img/partners/partner-6.PNG"
+  ],
+  "ict-server-room.jpg": [
+    "https://images.unsplash.com/photo-1564457461758-8ff96e439e83?auto=format&fit=crop&w=1600&q=80"
+  ],
+  "ict-computer-hardware.jpg": [
+    "https://images.unsplash.com/photo-1604754742629-3e5728249d73?auto=format&fit=crop&w=1600&q=80"
+  ],
+  "ict-network-cable.jpg": [
+    "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1600&q=80"
+  ]
+}

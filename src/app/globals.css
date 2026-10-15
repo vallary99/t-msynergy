@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand */
+  --color-brand: #ef1d04;
+  --color-brand-deep: #c01703; /* small red text on white (AA contrast) */
+  --color-ink: #0b0b0b;
+  --color-ink-soft: #1a1a1a;
+  --color-steel: #5b5f66;
+  --color-line: #e7e7e7;
+  --color-paper: #f7f7f6;
+
+  /* Fonts kept from the original site: Open Sans (body), Raleway (headings), Poppins (labels) */
+  --font-sans: var(--font-open-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-raleway), ui-sans-serif, system-ui, sans-serif;
+  --font-label: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight text-balance;
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 3px;
+  }
+}
+
+@utility container-x {
+  @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+}
+@utility eyebrow {
+  @apply font-label text-xs font-semibold tracking-[0.22em] text-brand-deep uppercase;
+}
+@utility btn {
+  @apply inline-flex items-center gap-2 px-6 py-3.5 font-label text-sm font-semibold tracking-wider uppercase transition-colors;
+}
+@utility btn-primary {
+  @apply btn bg-brand text-white hover:bg-ink;
+}
+@utility btn-dark {
+  @apply btn bg-ink text-white hover:bg-brand;
+}
+@utility btn-ghost {
+  @apply btn border border-white/30 text-white hover:border-brand hover:text-white;
+}
+
+@layer components {
+  .prose-tm p {
+    @apply mb-5 leading-8 text-steel;
+  }
+  .prose-tm h2 {
+    @apply mt-14 mb-5 text-2xl font-bold text-ink sm:text-3xl;
+  }
+  .prose-tm h3 {
+    @apply mt-10 mb-3 text-xl font-bold text-ink;
+  }
+  .prose-tm ul {
+    @apply mb-6 space-y-2 pl-0;
+  }
+  .prose-tm li {
+    @apply relative pl-6 leading-7 text-steel;
+  }
+  .prose-tm li::before {
+    content: "";
+    @apply absolute top-3 left-0 h-[2px] w-3 bg-brand;
+  }
+  .prose-tm a {
+    @apply font-semibold text-brand-deep underline underline-offset-4 hover:text-ink;
+  }
+  /* Engineering-drawing grid used behind dark sections */
+  .blueprint {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .blueprint-light {
+    background-image:
+      linear-gradient(rgba(11, 11, 11, 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(11, 11, 11, 0.045) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+}
+
+/* Client & partner logo carousel */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.logo-track {
+  animation: marquee var(--marquee-duration, 40s) linear infinite;
+}
+.logo-track-reverse {
+  animation-direction: reverse;
+}
+.logo-marquee:hover .logo-track,
+.logo-marquee:focus-within .logo-track {
+  animation-play-state: paused;
+}
+/* Hide the whole strip if none of its logos could be loaded */
+.logo-wall:not(:has(img)) {
+  display: none;
+}
+/* Hide a logo tile whose image failed to load */
+.logo-row li:not(:has(img)) {
+  display: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-track {
+    animation: none;
+    width: auto;
+  }
+  .logo-track > ul {
+    flex-wrap: wrap;
+  }
+  .logo-track > ul[aria-hidden] {
+    display: none;
+  }
+  .logo-marquee {
+    mask-image: none;
+  }
+}
